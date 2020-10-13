@@ -22,15 +22,17 @@ cd Flask-Redis-Quickstart
 **Install requirements**
 
 Set up python dependencies and install redis-server.
-```
-# Redis and pip on linux
-sudo apt-get install redis-server python3-pip
 
-# Redis on mac
+Mac:
+```
 brew install redis-server
 redis-server
+sudo pip3 install -r requirements.txt
+```
 
-# Python
+Linux:
+```
+sudo apt-get install redis-server python3-pip
 sudo pip3 install -r requirements.txt
 ```
 
