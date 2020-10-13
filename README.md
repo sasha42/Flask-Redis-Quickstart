@@ -1,14 +1,11 @@
 # Flask Redis Quickstart
-## Templates to do background magic ✨
-Example code that runs in the background asyncronously. Build things such as:
+## Templates to do build background magic ✨
 
 🌧 **Weather app** that pulls weather data in the background
 
 ✅ **Visualization platform** which runs large queries in background
 
 🕹 **Programming tool** that programs Arduino's from a background process
-
----
 
 Have you ever wanted to process an uploaded file asynronously? Or maybe you want to have a background process that updates data? Or maybe you just you want to have some variables that are shared between several python modules - this is the quickstart template for you!
 
