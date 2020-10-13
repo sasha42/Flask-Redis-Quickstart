@@ -7,7 +7,7 @@ function writeData() {
     console.log(formData)
 
     // post data with our form data and api key
-    fetch("http://localhost:5000/job", {
+    fetch(window.location.host + "/job", {
         method: "post",
         body: formData,
     })

@@ -2,7 +2,7 @@
 
 function readData() {
     // checks the status from adafruit
-    fetch("http://localhost:5000/data")
+    fetch(window.location.host + "/data")
     .then(function(response) {
         return response.json();
     }).then(function(data) {
@@ -21,7 +21,7 @@ function writeData() {
     console.log(formData)
 
     // post data with our form data and api key
-    fetch("http://localhost:5000/data", {
+    fetch(window.location.host + "/data", {
         method: "post",
         body: formData,
     })
