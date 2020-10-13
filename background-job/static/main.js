@@ -1,13 +1,17 @@
 "use strict"
 
-function writeData() {
+function writeJob() {
     // create a new form and populate with selected mode
     var form = document.querySelector('form');
     var formData = new FormData(form);
     console.log(formData)
 
+    // create a url with current host
+    var url = 'http://' + window.location.host + "/job"
+    console.log(url)
+
     // post data with our form data and api key
-    fetch(window.location.host + "/job", {
+    fetch(url, {
         method: "post",
         body: formData,
     })

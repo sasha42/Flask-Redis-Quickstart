@@ -1,8 +1,12 @@
 "use strict"
 
+// create a url with current host
+var url = 'http://' + window.location.host + "/data"
+console.log(url)
+
 function readData() {
     // checks the status from adafruit
-    fetch(window.location.host + "/data")
+    fetch(url)
     .then(function(response) {
         return response.json();
     }).then(function(data) {
@@ -21,7 +25,7 @@ function writeData() {
     console.log(formData)
 
     // post data with our form data and api key
-    fetch(window.location.host + "/data", {
+    fetch(url, {
         method: "post",
         body: formData,
     })
