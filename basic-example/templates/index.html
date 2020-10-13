@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basic example | Flask Redis Quickstart</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./static/main.css">
+  </head>
+  <body>
+    <div id="cardList">
+      <h1>Basic example</h1>
+      <div class="card-container">
+        <div class="card">
+            <h3>Write to redis</h3>
+            <form>
+              <label>Key</label>
+              <input type="text" name="key">
+              <br>
+              <label>Value</label>
+              <input type="text" name="value">
+            </form>
+            <button onclick="writeData()" id="write-button" class="button">Write</button>
+        </div>
+        <div class="card">
+            <h3>Read from redis</h3>
+            <div id="redis-data"></div>
+            <button onclick="readData()" id="read-button" class="button">Read</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="./static/main.js"></script>
+  </body>
+</html>
